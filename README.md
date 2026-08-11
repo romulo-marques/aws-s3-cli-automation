@@ -1,33 +1,33 @@
-# ☁️ Projeto 01: Automação e Gerenciamento do Amazon S3 via AWS CLI
+# ☁️ Projeto 03: Gerenciamento e Automação do Amazon S3 via AWS CLI
 
 ## 📌 Descrição
-Este projeto demonstra a configuração, autenticação e manipulação de recursos na nuvem AWS utilizando a linha de comando (**AWS CLI**) e o **Git Bash**. O objetivo foi criar um bucket S3 e realizar o upload de arquivos via terminal sem a necessidade da interface gráfica.
+Este projeto demonstra a criação e manipulação de recursos no Amazon S3 utilizando a Interface de Linha de Comando (**AWS CLI**) via **AWS CloudShell**. O objetivo foi criar um bucket S3, gerar um arquivo de teste e realizar o upload via terminal.
 
 ## 🛠️ Tecnologias Utilizadas
-* **AWS S3** (Simple Storage Service)
-* **AWS IAM** (Identity and Access Management)
+* **Amazon S3** (Simple Storage Service)
 * **AWS CLI v2**
-* **Git Bash / Shell Script**
+* **AWS CloudShell / Linux Bash**
 
 ## 🚀 Passos Executados
 
-1. **Configuração de Segurança e IAM:**
-   * Criação do usuário programático `admin-cli` no IAM.
-   * Geração e configuração segura das chaves de acesso (`Access Key` e `Secret Key`).
+1. **Acesso ao Terminal Executivo:**
+   * Inicialização do ambiente interativo via AWS CloudShell na região `us-east-1`.
 
-2. **Autenticação via Terminal:**
-   * Configuração das credenciais locais usando o comando `aws configure` na região `us-east-1`.
-   * Validação de identidade via `aws sts get-caller-identity`.
-
-3. **Gerenciamento do S3 via CLI:**
-   * Criado o bucket S3 via terminal:
-     `aws s3 mb s3://meu-portfolio-aws-rmarques-2026`
-   * Upload de arquivos realizado com sucesso:
-     `aws s3 cp arquivo_teste.txt s3://meu-portfolio-aws-rmarques-2026/`
-   * Listagem e verificação dos objetos no bucket:
-     `aws s3 ls s3://meu-portfolio-aws-rmarques-2026/`
+2. **Gerenciamento do S3 via CLI:**
+   * Criação do bucket S3 via terminal:
+     `aws s3 mb s3://portfolio-s3-rmarques --region us-east-1`
+   * Criação do arquivo local e upload para a nuvem:
+     `echo "Arquivo de teste para o Projeto 03" > teste.txt`
+     `aws s3 cp teste.txt s3://portfolio-s3-rmarques/`
+   * Listagem e verificação dos objetos armazenados no bucket:
+     `aws s3 ls s3://portfolio-s3-rmarques/`
 
 ## 📊 Aprendizados
-* Prática de gerenciamento de identidades e acessos na AWS (IAM).
-* Automação de tarefas em nuvem utilizando Shell/Bash.
-* Boas práticas de segurança (armazenamento seguro de credenciais).
+* Manipulação e armazenamento de objetos na nuvem via linha de comando.
+* Automação de tarefas em nuvem utilizando comandos Shell/Bash.
+* Uso produtivo do AWS CloudShell para gestão de infraestrutura.
+
+## 📸 Evidências de Execução
+
+### 1. Execução dos Comandos no AWS CloudShell
+<img width="980" height="554" alt="image" src="https://github.com/user-attachments/assets/75a32d42-bc9a-4a69-aa3d-bbdcae9e3a64" />
