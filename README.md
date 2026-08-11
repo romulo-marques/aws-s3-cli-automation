@@ -31,3 +31,4 @@ Este projeto demonstra a criação e manipulação de recursos no Amazon S3 util
 
 ### 1. Execução dos Comandos no AWS CloudShell
 <img width="980" height="554" alt="image" src="https://github.com/user-attachments/assets/75a32d42-bc9a-4a69-aa3d-bbdcae9e3a64" />
+<img width="988" height="549" alt="image" src="https://github.com/user-attachments/assets/33119696-c4da-4a14-9c32-990f9391ffb4" />
